@@ -1,0 +1,115 @@
+.layout-section {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  @media (min-width: 768px) {
+    .layout-section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .layout-section {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+    }
+  }
+  
+  .layout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  @media (min-width: 768px) {
+    .layout-grid {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .layout-grid {
+      gap: 5rem;
+    }
+  }
+  
+  .layout-title {
+    margin-bottom: 1.25rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  @media (min-width: 768px) {
+    .layout-title {
+      margin-bottom: 1.5rem;
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .layout-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  .layout-description {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .layout-description {
+      margin-bottom: 2rem;
+      font-size: 1.125rem;
+    }
+  }
+  
+  .layout-features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .layout-features {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+  
+  .layout-feature-title {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  
+  @media (min-width: 768px) {
+    .layout-feature-title {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+  }
+  
+  .layout-feature-description {
+    font-size: 1rem;
+  }
+  
+  .layout-image {
+    width: 100%;
+    object-fit: cover;
+  }

@@ -1,10 +1,8 @@
-```jsx
-"use client";
-
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
+import './Navbar1.css'; // Import the CSS file for this component
 
 const useRelume = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,11 +33,11 @@ export function Navbar1() {
   return (
     <section
       id="relume"
-      className="flex w-full items-center border-b border-border-primary bg-background-primary lg:min-h-18 lg:px-[5%]"
+      className="navbar"
       style={{ backgroundColor: "#f8f9fa", padding: "10px 0" }}
     >
-      <div className="size-full lg:flex lg:items-center lg:justify-between">
-        <div className="flex min-h-16 items-center justify-between px-[5%] md:min-h-18 lg:min-h-full lg:px-0">
+      <div className="navbar-container">
+        <div className="navbar-header">
           <a href="#">
             <img
               src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
@@ -48,11 +46,11 @@ export function Navbar1() {
             />
           </a>
           <button
-            className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
+            className="navbar-toggle"
             onClick={useActive.toggleMobileMenu}
           >
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-black"
+              className="navbar-toggle-bar"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: 8, transition: { delay: 0.1 } },
@@ -65,7 +63,7 @@ export function Navbar1() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-black"
+              className="navbar-toggle-bar"
               animate={useActive.animateMobileMenu}
               variants={{
                 open: { width: 0, transition: { duration: 0.1 } },
@@ -76,7 +74,7 @@ export function Navbar1() {
               }}
             />
             <motion.span
-              className="my-[3px] h-0.5 w-6 bg-black"
+              className="navbar-toggle-bar"
               animate={useActive.animateMobileMenuButtonSpan}
               variants={{
                 open: { translateY: -8, transition: { delay: 0.1 } },
@@ -99,28 +97,28 @@ export function Navbar1() {
           exit="close"
           animate={useActive.animateMobileMenu}
           transition={{ duration: 0.4 }}
-          className="overflow-hidden px-[5%] lg:flex lg:items-center lg:px-0 lg:[--height-closed:auto] lg:[--height-open:auto]"
+          className="navbar-menu"
         >
           <a
             href="#"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="navbar-link"
             style={{ color: "#007bff", padding: "8px 12px" }}
           >
             Home Page
           </a>
           <a
             href="#"
-            className="block py-3 text-md first:pt-7 lg:px-4 lg:py-2 lg:text-base first:lg:pt-2"
+            className="navbar-link"
             style={{ color: "#007bff", padding: "8px 12px" }}
           >
             Get Started
           </a>
-          <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
+          <div className="navbar-actions">
             <Button
               title="Join"
               variant="secondary"
               size="sm"
-              className="w-full"
+              className="navbar-button"
               style={{
                 margin: "5px",
                 padding: "8px 16px",
@@ -133,7 +131,7 @@ export function Navbar1() {
             <Button
               title="Login"
               size="sm"
-              className="w-full"
+              className="navbar-button"
               style={{
                 margin: "5px",
                 padding: "8px 16px",
@@ -149,4 +147,3 @@ export function Navbar1() {
     </section>
   );
 }
-```
