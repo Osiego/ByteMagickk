@@ -4,6 +4,12 @@ import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import { RxChevronRight } from "react-icons/rx";
 import './Layout252.css'; // Import the CSS file for this component
+import IDE from '../../Assets/IDE.webp'; // Import the image
+import Eso from '../../Assets/Eso.webp'; // Import the image
+import Magick from '../../Assets/magick.webp'; // Import the image
+
+
+
 
 export function Layout252() {
   return (
@@ -28,8 +34,8 @@ export function Layout252() {
           <div className="layout-item">
             <div className="layout-image-container">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                src={IDE}
+                alt="IDE"
                 className="layout-image"
               />
             </div>
@@ -48,8 +54,8 @@ export function Layout252() {
           <div className="layout-item">
             <div className="layout-image-container">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                src={Eso}
+                alt="Eso"
                 className="layout-image"
               />
             </div>
@@ -68,8 +74,8 @@ export function Layout252() {
           <div className="layout-item">
             <div className="layout-image-container">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-                alt="Relume placeholder image"
+                src={Magick}
+                alt="Magick"
                 className="layout-image"
               />
             </div>

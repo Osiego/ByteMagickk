@@ -2,6 +2,7 @@ import { Button, useMediaQuery } from "@relume_io/relume-ui";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
+import bytemagicklogo from '../../Assets/bytemagicklogo.webp'; // Import the image
 import './Navbar1.css'; // Import the CSS file for this component
 
 const useRelume = () => {
@@ -40,9 +41,9 @@ export function Navbar1() {
         <div className="navbar-header">
           <a href="#">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+              src={bytemagicklogo}
               alt="Logo image"
-              style={{ maxHeight: "40px" }}
+              className="navbar-logo"
             />
           </a>
           <button

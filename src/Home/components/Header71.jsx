@@ -3,6 +3,8 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import './Header71.css'; // Import the CSS file for this component
+import AI from '../../Assets/AI.webp'; // Import the image
+
 
 export function Header71() {
   return (
@@ -29,9 +31,9 @@ export function Header71() {
           </div>
           <div className="header-image-container">
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
+              src={AI}
               className="header-image"
-              alt="Relume placeholder image"
+              alt="Relume placeholder "
             />
           </div>
         </div>

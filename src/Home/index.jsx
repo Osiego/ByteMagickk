@@ -8,6 +8,8 @@ import { Layout239 } from "./components/Layout239";
 import { Cta1 } from "./components/Cta1";
 import { Faq5 } from "./components/Faq5";
 import { Footer2 } from "./components/Footer2";
+import CodeEditor from "./components/CodeEditor"; // Add this line
+
 
 
 export default function Page() {
@@ -16,9 +18,8 @@ export default function Page() {
       <Navbar1 />
       <Header71 />
       <Layout252 />
-      <Testimonial13 />
+      <CodeEditor />
       <Layout6 />
-      <Layout239 />
       <Cta1 />
       <Faq5 />
       <Footer2 />

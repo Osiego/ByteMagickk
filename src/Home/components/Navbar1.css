@@ -1,108 +1,112 @@
 .navbar {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    border-bottom: 1px solid var(--border-primary);
-    background-color: var(--background-primary);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid var(--border-primary);
+  background-color: var(--background-primary);
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.5rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: -0.5rem;
+}
+
+.navbar-toggle-bar {
+  margin: 3px 0;
+  height: 0.125rem;
+  width: 1.5rem;
+  background-color: black;
+}
+
+.navbar-menu {
+  overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.navbar-link {
+  display: block;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.navbar-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.navbar-button {
+  width: 100%;
+}
+
+.navbar-logo {
+  max-height: 500px; /* Increase the max-height to make the image bigger */
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    min-height: 5.5rem;
+    padding-left: 5%;
+    padding-right: 5%;
   }
-  
+
   .navbar-container {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 4.5rem;
-    padding-left: 5%;
-    padding-right: 5%;
   }
-  
+
   .navbar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 4rem;
-    padding-left: 5%;
-    padding-right: 5%;
+    min-height: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
-  
-  .navbar-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    margin-right: -0.5rem;
-  }
-  
-  .navbar-toggle-bar {
-    margin: 3px 0;
-    height: 0.125rem;
-    width: 1.5rem;
-    background-color: black;
-  }
-  
+
   .navbar-menu {
-    overflow: hidden;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
-  .navbar-link {
-    display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    font-size: 1rem;
-  }
-  
-  .navbar-actions {
-    margin-top: 1.5rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin-left: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
-  
-  .navbar-button {
-    width: 100%;
+
+  .navbar-link {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  
-  @media (min-width: 1024px) {
-    .navbar {
-      min-height: 4.5rem;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  
-    .navbar-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    .navbar-header {
-      min-height: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    .navbar-menu {
-      display: flex;
-      align-items: center;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    .navbar-link {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      font-size: 1.125rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  
-    .navbar-actions {
-      margin-top: 0;
-      flex-direction: row;
-    }
+
+  .navbar-actions {
+    margin-top: 0;
+    flex-direction: row;
   }
+}

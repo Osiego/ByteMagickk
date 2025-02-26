@@ -2,6 +2,7 @@
 
 import React from "react";
 import './Layout6.css'; // Import the CSS file for this component
+import AI from '../../Assets/AI.webp'; // Import the image
 
 export function Layout6() {
   return (
@@ -42,9 +43,9 @@ export function Layout6() {
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image.svg"
+              src={AI}
               className="layout-image"
-              alt="Relume placeholder image"
+              alt="Relume placeh"
             />
           </div>
         </div>

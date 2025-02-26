@@ -10,6 +10,8 @@ import {
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
 import './Footer2.css'; // Import the CSS file for this component
+import bytemagicklogo from '../../Assets/bytemagicklogo.webp'; // Import the image
+
 
 const useForm = () => {
   const [email, setEmail] = useState("");
@@ -36,7 +38,7 @@ export function Footer2() {
           <div className="footer-logo-grid">
             <a href="#" className="footer-logo-link">
               <img
-                src="https://d22po4pjz3o32e.cloudfront.net/logo-image.svg"
+                src={bytemagicklogo}
                 alt="Logo image"
                 className="footer-logo"
               />

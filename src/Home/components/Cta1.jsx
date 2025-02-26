@@ -3,6 +3,7 @@
 import { Button } from "@relume_io/relume-ui";
 import React from "react";
 import './Cta1.css'; // Import the CSS file for this component
+import CTABG from '../../Assets/CTABG.png'; // Import the image
 
 export function Cta1() {
   return (
@@ -26,9 +27,9 @@ export function Cta1() {
           </div>
           <div>
             <img
-              src="https://d22po4pjz3o32e.cloudfront.net/placeholder-image-landscape.svg"
-              className="cta-image"
-              alt="Relume placeholder image"
+              src={CTABG}
+              className="cta"
+              alt="Relume placeholder"
             />
           </div>
         </div>
